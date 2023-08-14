@@ -1,0 +1,41 @@
+:root {
+  /* шрифты */
+  --montserrat: "Montserrat";
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --extrabold: 800;
+
+  --default-fs: 16px;
+  --default-lh: 32px;
+
+  --black: #000000;
+  --dark: #333333;
+  --dark-light: #414141;
+  --white: #ffffff;
+  --orange: #FF9900;
+  --light-orange: #FFB84D;
+  --dark-orange: #E1670E;
+  --aquamarine-light: #b2d4d6;
+  --dark-transp: rgba(0, 0, 0, 0.5);
+  --grey-light: #CACACA;
+  --grey-dark: #666666;
+  --lightgreen: #97EE3F;
+
+  /* Sizes */
+  --body-min-width: 320px;
+  --container-max-width: 1872px;
+  --container-padding: 50px;
+
+  /* Transition */
+  --short: 0.3s;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --container-padding: 15px;
+    --default-fs: 14px;
+    --default-lh: 28px;
+  }
+}

@@ -1,0 +1,151 @@
+.card__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 870px;
+  min-height: 100%;
+  border-radius: 32px;
+  background-color: var(--aquamarine-light);
+  background-image: url("../img/about_work.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card__detail-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 196px;
+  padding: 50px;
+  border-radius: 32px;
+  color: var(--white);
+  background-color: var(--dark-transp);
+}
+
+.card__detail-text {
+  max-width: 454px;
+  margin-top: 0;
+  margin-right: 40px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: var(--bold);
+  line-height: 32px;
+}
+
+.card__detail-btn {
+  margin-left: auto;
+}
+
+@media (max-width: 1440px) {
+  .card__detail {
+    min-width: 100%;
+    min-height: 640px;
+  }
+
+  .card {
+    max-width: calc(640 / 1440 * 50%);
+  }
+
+  .card__detail-btn {
+    width: 175px;
+    height: 60px;
+    padding: 14px 36px;
+  }
+}
+
+@media (max-width: 962px) {
+  .card__detail {
+    min-height: 650px;
+  }
+
+  .card__detail-content {
+    padding: 34px 40px;
+  }
+
+  .card__detail-text {
+    max-width: calc(366 / 668 * 100%);
+  }
+}
+
+@media (max-width: 800px) {
+  .card__detail {
+    background-image: url("../img/about_work_768.jpg");
+    min-height: 650px;
+    border-radius: 16px;
+  }
+
+  .card__detail-content {
+    padding: 15px 40px 15px 40px;
+    border-radius: 16px;
+    }
+
+  .card__detail-text {
+    max-width: 355px;
+    margin-right: 0;
+  }
+
+  .card__detail-btn {
+    margin-left: auto;
+    padding: 20px 36px;
+  }
+}
+
+@media (max-width: 720px) {
+  .card__detail-text {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .card__detail-btn {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 600px) {
+   .card__detail {
+    display: flex;
+    margin-bottom: 6px;
+    min-height: auto;
+    background-size: 0;
+    background-image: url('../img/about_work_320.jpg');
+    background-color: transparent;
+  }
+
+  .card__detail::before {
+    content: "";
+    width: 100%;
+    margin-bottom: 5px;
+    padding-top: calc(200 / 290 * 100%);
+    background-color: var(--aquamarine-light);
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card__detail-content {
+    margin-bottom: -2px;
+    padding: 0;
+    color: var(--black);
+    background-color: transparent;
+  }
+
+  .card__detail-text {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: var(--regular);
+  }
+
+  .card__detail-btn {
+    width: 162px;
+    height: 39px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: auto;
+    margin-left: 0;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

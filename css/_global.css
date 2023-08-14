@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-width: var(--body-min-width);
+  font-family: var(--montserrat), sans-serif;
+  font-size: var(--default-fs);
+  line-height: var(--default-lh);
+  color: var(--dark);
+  background-color: var(--white);
+  align-items: center;
+}
+
+/* .page__body {
+  margin: 0;
+  padding: 0;
+  min-height: 2000px;
+  overflow-x: hidden;
+} */
+
+.container {
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: var(--regular);
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.text:last-child {
+  margin-bottom: 0;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.reset-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.color-lightgrey {
+  color: var(--grey-light);
+}

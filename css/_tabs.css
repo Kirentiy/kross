@@ -1,0 +1,205 @@
+.tabs__btns-list {
+  display: flex;
+  margin-bottom: 41px;
+  flex-wrap: wrap;
+  font-size: 17px;
+  line-height: 32px;
+}
+
+.tabs__btn-item {
+  margin-right: 89px;
+}
+
+.tabs__btn-item:last-child {
+  margin-right: 0;
+}
+
+.tabs__btn:active {
+  color: var(--dark-orange);
+}
+
+.tabs__content-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* .tabs__content-wrap::after {
+  content: "";
+  width: calc(870 / 1770 * 100%);
+  min-height: 460px;
+  border-radius: 32px;
+  background-color: var(--aquamarine-light);
+  background-size: cover;
+  background-position: center;
+}
+
+.tabs__content-wrap-consultation::after {
+  background-image: url("/img/step_1.jpg");
+  margin-top: 8px;
+} */
+
+.tabs__content {
+  width: calc(760 / 1770 * 100%);
+}
+
+.tabs-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: var(--bold);
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.tabs-text {
+  min-height: 350px;
+  margin-bottom: 19px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: var(--regular);
+  line-height: 32px;
+}
+
+.tabs__link-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -32px;
+}
+
+.tabs__link {
+  margin-right: 28px;
+  margin-bottom: 32px;
+  transition: color var(--short);
+}
+
+.tabs__image-wrap {
+  width: calc(870 / 1770 * 100%);
+  padding-top: 8px;
+  border-radius: 32px;
+}
+
+.tabs__image {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 1440px) {
+  .tabs__content-wrap::after {
+    min-height: 525px;
+    margin-top: 10px;
+  }
+
+  .tabs__btns-list {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1280px) {
+
+  .tabs__btns-list {
+    margin-bottom: 47px;
+  }
+
+  .tabs-title {
+    margin-bottom: 6px;
+  }
+
+  .tabs-text {
+    margin-bottom: 25px;
+  }
+
+  .tabs__content {
+    width: calc(437 / 924 * 100%);
+  }
+
+  .tabs__image-wrap {
+    width: calc(437 / 924 * 100%);
+    padding-top: 9px;
+    border-radius: 32px;
+  }
+
+  /*
+  .tabs__content-wrap-consultation::after {
+    background-image: url("/img/step_1024.jpg");
+    min-height: 689px;
+  } */
+}
+
+@media (max-width: 962px) {
+
+  .tabs__btns-list {
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
+
+  .tabs-title {
+    margin-bottom: 8px;
+  }
+
+  .tabs__content-wrap {
+    flex-direction: column-reverse;
+  }
+
+  .tabs__content,
+  .tabs__image-wrap {
+    width: 100%;
+  }
+
+  .tabs__image-wrap {
+    margin-bottom: 38px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .tabs__btn-item {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .tabs__btns-list {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  .tabs__image-wrap {
+    margin-bottom: 15px;
+  }
+
+  .tabs-text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: var(--regular);
+    line-height: 28px;
+  }
+
+  .tabs-title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: var(--medium);
+  }
+
+  .tabs__link {
+    margin-right: 8px;
+    margin-bottom: 10px;
+  }
+
+  .tabs__link:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (any-hover: hover) {
+  .tabs__btn:hover:not(active) {
+    color: var(--orange);
+    outline: none;
+  }
+
+  .tabs__btn:focus:not(:hover:not(active)):not(:active) {
+    outline: 2px solid var(--orange);
+    outline-offset: 3px;
+  }
+}
